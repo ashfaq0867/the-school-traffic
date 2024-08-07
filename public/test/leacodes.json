@@ -1,0 +1,642 @@
+[
+    {
+        "Agency": "Alhambra PD",
+        "LEACode": "1901"
+    },
+    {
+        "Agency": "Anaheim PD",
+        "LEACode": "7399"
+    },
+    {
+        "Agency": "Animal Control",
+        "LEACode": "7203"
+    },
+    {
+        "Agency": "Arcadia PD",
+        "LEACode": "1902"
+    },
+    {
+        "Agency": "Azusa PD",
+        "LEACode": "1905"
+    },
+    {
+        "Agency": "Baldwin Park PD",
+        "LEACode": "1906"
+    },
+    {
+        "Agency": "Baldwin Park Red Light",
+        "LEACode": "7684"
+    },
+    {
+        "Agency": "Baldwin Park Unified School",
+        "LEACode": "1908"
+    },
+    {
+        "Agency": "Bell Gardens PD",
+        "LEACode": "1909"
+    },
+    {
+        "Agency": "Bell Gardens Red Light",
+        "LEACode": "7691"
+    },
+    {
+        "Agency": "Bell PD",
+        "LEACode": "1907"
+    },
+    {
+        "Agency": "Beverly Hills PD",
+        "LEACode": "1910"
+    },
+    {
+        "Agency": "Beverly Hills Red Light",
+        "LEACode": "7640"
+    },
+    {
+        "Agency": "Buena Park PD",
+        "LEACode": "7289"
+    },
+    {
+        "Agency": "Burbank PD",
+        "LEACode": "1912"
+    },
+    {
+        "Agency": "Burbank/Glendale/Pasadena Airport",
+        "LEACode": "1981"
+    },
+    {
+        "Agency": "CA Dept of Fish and Game",
+        "LEACode": "7204"
+    },
+    {
+        "Agency": "CA State Police",
+        "LEACode": "1998"
+    },
+    {
+        "Agency": "Cal State Dominguez",
+        "LEACode": "0043"
+    },
+    {
+        "Agency": "Cal State LA",
+        "LEACode": "7207"
+    },
+    {
+        "Agency": "Cal State Long Beach",
+        "LEACode": "7206"
+    },
+    {
+        "Agency": "Cal State Northridge",
+        "LEACode": "7208"
+    },
+    {
+        "Agency": "California Highway Patrol",
+        "LEACode": "1999"
+    },
+    {
+        "Agency": "California Parks And Recreation",
+        "LEACode": "7205"
+    },
+    {
+        "Agency": "California State Polytechnic College",
+        "LEACode": "1978"
+    },
+    {
+        "Agency": "Catalina Island",
+        "LEACode": "7253"
+    },
+    {
+        "Agency": "Cerritos College",
+        "LEACode": "7249"
+    },
+    {
+        "Agency": "CHP Red Light",
+        "LEACode": "7650"
+    },
+    {
+        "Agency": "CHP Red Light",
+        "LEACode": "7653"
+    },
+    {
+        "Agency": "Citrus Red Light",
+        "LEACode": "7652"
+    },
+    {
+        "Agency": "City of Bellflower",
+        "LEACode": "7534"
+    },
+    {
+        "Agency": "City of Cerritos",
+        "LEACode": "7314"
+    },
+    {
+        "Agency": "City of Commerce RLC Project",
+        "LEACode": "7688"
+    },
+    {
+        "Agency": "City of Gardena",
+        "LEACode": "7378"
+    },
+    {
+        "Agency": "City of Lancaster",
+        "LEACode": "7311"
+    },
+    {
+        "Agency": "City of Lawndale",
+        "LEACode": "7332"
+    },
+    {
+        "Agency": "City of Lynwood",
+        "LEACode": "7260"
+    },
+    {
+        "Agency": "Claremont PD",
+        "LEACode": "1913"
+    },
+    {
+        "Agency": "Compton College",
+        "LEACode": "7369"
+    },
+    {
+        "Agency": "Compton PD",
+        "LEACode": "1915"
+    },
+    {
+        "Agency": "Compton Photo Radar",
+        "LEACode": "7414"
+    },
+    {
+        "Agency": "Compton Red Light",
+        "LEACode": "7665"
+    },
+    {
+        "Agency": "Compton School Police",
+        "LEACode": "7100"
+    },
+    {
+        "Agency": "Covina PD",
+        "LEACode": "1916"
+    },
+    {
+        "Agency": "Covina Red Light",
+        "LEACode": "7687"
+    },
+    {
+        "Agency": "Cudahy PD",
+        "LEACode": "1917"
+    },
+    {
+        "Agency": "Culver City PD",
+        "LEACode": "1918"
+    },
+    {
+        "Agency": "Culver City Red Light",
+        "LEACode": "7647"
+    },
+    {
+        "Agency": "Dept Alcoholic Beverage Control",
+        "LEACode": "7221"
+    },
+    {
+        "Agency": "Dept of Building &amp; Safety",
+        "LEACode": "7228"
+    },
+    {
+        "Agency": "Dept of Corrections",
+        "LEACode": "1995"
+    },
+    {
+        "Agency": "Downey PD",
+        "LEACode": "1920"
+    },
+    {
+        "Agency": "East LA College PD",
+        "LEACode": "7005"
+    },
+    {
+        "Agency": "East LA Red Light",
+        "LEACode": "7650"
+    },
+    {
+        "Agency": "El Camino College PD",
+        "LEACode": "7099"
+    },
+    {
+        "Agency": "El Monte PD",
+        "LEACode": "1922"
+    },
+    {
+        "Agency": "El Monte Red Light",
+        "LEACode": "7669"
+    },
+    {
+        "Agency": "El Segundo PD",
+        "LEACode": "1923"
+    },
+    {
+        "Agency": "Exposition-line Photo Enforcement",
+        "LEACode": "7414"
+    },
+    {
+        "Agency": "Federal Protective Service",
+        "LEACode": "9015"
+    },
+    {
+        "Agency": "Fullerton PD",
+        "LEACode": "7362"
+    },
+    {
+        "Agency": "Gardena PD",
+        "LEACode": "1924"
+    },
+    {
+        "Agency": "Gardena Red Light",
+        "LEACode": "7681"
+    },
+    {
+        "Agency": "Glendale College",
+        "LEACode": "7269"
+    },
+    {
+        "Agency": "Glendale PD",
+        "LEACode": "1925"
+    },
+    {
+        "Agency": "Glendale Red Light",
+        "LEACode": "7689"
+    },
+    {
+        "Agency": "Glendora PD",
+        "LEACode": "1926"
+    },
+    {
+        "Agency": "Gold-line Photo Enforcement",
+        "LEACode": "7414"
+    },
+    {
+        "Agency": "Harbor Patrol",
+        "LEACode": "7056"
+    },
+    {
+        "Agency": "Hawthorne PD",
+        "LEACode": "1928"
+    },
+    {
+        "Agency": "Hawthorne Red Light",
+        "LEACode": "7673"
+    },
+    {
+        "Agency": "Hermosa Beach PD",
+        "LEACode": "1929"
+    },
+    {
+        "Agency": "Housing Authority",
+        "LEACode": "7058"
+    },
+    {
+        "Agency": "Huntington Park PD",
+        "LEACode": "1931"
+    },
+    {
+        "Agency": "Inglewood PD",
+        "LEACode": "1933"
+    },
+    {
+        "Agency": "Inglewood Red Light",
+        "LEACode": "7670"
+    },
+    {
+        "Agency": "Inglewood Unified School District",
+        "LEACode": "7504"
+    },
+    {
+        "Agency": "Irwindale PD",
+        "LEACode": "1934"
+    },
+    {
+        "Agency": "LA City Animal Regulation",
+        "LEACode": "0090"
+    },
+    {
+        "Agency": "LA City Park Ranger",
+        "LEACode": "7053"
+    },
+    {
+        "Agency": "LA City Red Light",
+        "LEACode": "7657"
+    },
+    {
+        "Agency": "LA Community College",
+        "LEACode": "7059"
+    },
+    {
+        "Agency": "LA County Civil Division",
+        "LEACode": "7306"
+    },
+    {
+        "Agency": "LA County Lifeguards",
+        "LEACode": "7057"
+    },
+    {
+        "Agency": "LA County Parks &amp; Rec",
+        "LEACode": "7055"
+    },
+    {
+        "Agency": "LA County Safety Police",
+        "LEACode": "7054"
+    },
+    {
+        "Agency": "LA County Sheriff",
+        "LEACode": "1900"
+    },
+    {
+        "Agency": "LA General Services Police Agency",
+        "LEACode": "7603"
+    },
+    {
+        "Agency": "LA Public Safety",
+        "LEACode": "7054"
+    },
+    {
+        "Agency": "La Verne PD",
+        "LEACode": "1938"
+    },
+    {
+        "Agency": "Lancaster Red Light",
+        "LEACode": "7685"
+    },
+    {
+        "Agency": "Lanterman State Hospital",
+        "LEACode": "7214"
+    },
+    {
+        "Agency": "LAX PD",
+        "LEACode": "1943"
+    },
+    {
+        "Agency": "LB Marine Safety",
+        "LEACode": "7427"
+    },
+    {
+        "Agency": "Lomita PD",
+        "LEACode": "1940"
+    },
+    {
+        "Agency": "Long Beach City College",
+        "LEACode": "7239"
+    },
+    {
+        "Agency": "Long Beach Fire Dept",
+        "LEACode": "7396"
+    },
+    {
+        "Agency": "Long Beach PD",
+        "LEACode": "1941"
+    },
+    {
+        "Agency": "Long Beach Red Light",
+        "LEACode": "7659"
+    },
+    {
+        "Agency": "Los Angeles PD",
+        "LEACode": "1942"
+    },
+    {
+        "Agency": "Los Angeles Unified School District",
+        "LEACode": "7300"
+    },
+    {
+        "Agency": "Los Cerritos Red Light",
+        "LEACode": "7663"
+    },
+    {
+        "Agency": "Lynwood Red Light",
+        "LEACode": "7678"
+    },
+    {
+        "Agency": "Manhattan Beach PD",
+        "LEACode": "1944"
+    },
+    {
+        "Agency": "Maywood PD",
+        "LEACode": "1945"
+    },
+    {
+        "Agency": "Maywood Red Light",
+        "LEACode": "7679"
+    },
+    {
+        "Agency": "Met Transit Authority",
+        "LEACode": "1980"
+    },
+    {
+        "Agency": "Metro State Hospital",
+        "LEACode": "7343"
+    },
+    {
+        "Agency": "Metrolink Conductor",
+        "LEACode": "7444"
+    },
+    {
+        "Agency": "Monrovia PD",
+        "LEACode": "1946"
+    },
+    {
+        "Agency": "Montebello PD",
+        "LEACode": "1947"
+    },
+    {
+        "Agency": "Montebello USD PD (Unified School District PD)",
+        "LEACode": "7294"
+    },
+    {
+        "Agency": "Montebello Red Light",
+        "LEACode": "7664"
+    },
+    {
+        "Agency": "Monterey Park PD",
+        "LEACode": "1948"
+    },
+    {
+        "Agency": "Mountains Recreation Conservation Authority",
+        "LEACode": "7275"
+    },
+    {
+        "Agency": "Ontario PD",
+        "LEACode": "7309"
+    },
+    {
+        "Agency": "Orange Line Photo Enforcement",
+        "LEACode": "7414"
+    },
+    {
+        "Agency": "Pacific Harbor Line Railroad",
+        "LEACode": "7695"
+    },
+    {
+        "Agency": "Palos Verdes Estates PD",
+        "LEACode": "1951"
+    },
+    {
+        "Agency": "Paramount Red Light",
+        "LEACode": "7680"
+    },
+    {
+        "Agency": "Pasadena City College",
+        "LEACode": "7316"
+    },
+    {
+        "Agency": "Pasadena PD",
+        "LEACode": "1953"
+    },
+    {
+        "Agency": "Pasadena Red Light",
+        "LEACode": "7661"
+    },
+    {
+        "Agency": "Placentia PD",
+        "LEACode": "7402"
+    },
+    {
+        "Agency": "Pomona PD",
+        "LEACode": "1955"
+    },
+    {
+        "Agency": "Pomona Unified School District",
+        "LEACode": "7519"
+    },
+    {
+        "Agency": "Port Police of Los Angeles",
+        "LEACode": "7088"
+    },
+    {
+        "Agency": "Redondo Beach PD",
+        "LEACode": "1956"
+    },
+    {
+        "Agency": "Rialto PD",
+        "LEACode": "7406"
+    },
+    {
+        "Agency": "Rio Hondo Red Light",
+        "LEACode": "7653"
+    },
+    {
+        "Agency": "San Fernando PD",
+        "LEACode": "1961"
+    },
+    {
+        "Agency": "San Gabriel PD",
+        "LEACode": "1962"
+    },
+    {
+        "Agency": "San Marino PD",
+        "LEACode": "1963"
+    },
+    {
+        "Agency": "Santa Clarita Red Light",
+        "LEACode": "7676"
+    },
+    {
+        "Agency": "Santa Fe Springs Red Light",
+        "LEACode": "7677"
+    },
+    {
+        "Agency": "Santa Monica Comm College",
+        "LEACode": "7372"
+    },
+    {
+        "Agency": "Santa Monica PD",
+        "LEACode": "1965"
+    },
+    {
+        "Agency": "Seal Beach PD",
+        "LEACode": "7215"
+    },
+    {
+        "Agency": "Sierra Madre PD",
+        "LEACode": "1966"
+    },
+    {
+        "Agency": "Signal Hill PD",
+        "LEACode": "1967"
+    },
+    {
+        "Agency": "Simi Valley PD",
+        "LEACode": "7388"
+    },
+    {
+        "Agency": "South Gate PD",
+        "LEACode": "1969"
+    },
+    {
+        "Agency": "South Gate Red Light",
+        "LEACode": "7662"
+    },
+    {
+        "Agency": "South Pasadena PD",
+        "LEACode": "1970"
+    },
+    {
+        "Agency": "Temple City",
+        "LEACode": "7295"
+    },
+    {
+        "Agency": "Temple City",
+        "LEACode": "7925"
+    },
+    {
+        "Agency": "Torrance PD",
+        "LEACode": "1972"
+    },
+    {
+        "Agency": "UCLA Police Department",
+        "LEACode": "1997"
+    },
+    {
+        "Agency": "Union Pacific Railroad",
+        "LEACode": "7261"
+    },
+    {
+        "Agency": "US Bureau of Diplomatic Security",
+        "LEACode": "9011"
+    },
+    {
+        "Agency": "US Forestry Service",
+        "LEACode": "9008"
+    },
+    {
+        "Agency": "Vernon PD",
+        "LEACode": "1973"
+    },
+    {
+        "Agency": "Veterans Affairs Police Long Beach",
+        "LEACode": "7632"
+    },
+    {
+        "Agency": "Walnut Red Light",
+        "LEACode": "7686"
+    },
+    {
+        "Agency": "West Covina PD",
+        "LEACode": "1975"
+    },
+    {
+        "Agency": "West Hollywood Red Light",
+        "LEACode": "7648"
+    },
+    {
+        "Agency": "West LA College Police",
+        "LEACode": "7003"
+    },
+    {
+        "Agency": "West LA Red Light",
+        "LEACode": "7650"
+    },
+    {
+        "Agency": "Whittier PD",
+        "LEACode": "1976"
+    },
+    {
+        "Agency": "Whittier Red Light",
+        "LEACode": "7672"
+    }
+]

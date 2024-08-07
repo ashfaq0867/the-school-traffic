@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*.no-tailwind-base {
+  all: unset; !* Resets all properties to their initial values *!
+}*/
+
+
+/* Custom CSS */
+.no-tailwind-base blockquote,
+.no-tailwind-base dl,
+.no-tailwind-base dd,
+.no-tailwind-base h1,
+.no-tailwind-base h2,
+.no-tailwind-base h3,
+.no-tailwind-base h4,
+.no-tailwind-base h5,
+.no-tailwind-base h6,
+.no-tailwind-base hr,
+.no-tailwind-base figure,
+.no-tailwind-base p,
+.no-tailwind-base pre {
+  margin: 10px 0px 10px 0px; /* Reset margin to initial value */
+}
+
+.no-tailwind-base h1,
+.no-tailwind-base h2,
+.no-tailwind-base h3,
+.no-tailwind-base h4,
+.no-tailwind-base h5,
+.no-tailwind-base h6 {
+  font-weight: bold; /* Reset font weight to initial value */
+}
+
+.no-tailwind-base ol,
+.no-tailwind-base ul {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+
