@@ -168,11 +168,10 @@
 
             function toggleSubmitButton() {
                 const isAgreementChecked = $('#agreementCheckbox').is(':checked');
-                const isSpecialOfferChecked = $('#specialOfferCheckbox').is(':checked');
-                $('#submitButton').prop('disabled', !(isAgreementChecked && isSpecialOfferChecked));
+                $('#submitButton').prop('disabled', !isAgreementChecked);
             }
 
-            $('#agreementCheckbox, #specialOfferCheckbox').on('change', function() {
+            $('#agreementCheckbox').on('change', function() {
                 toggleSubmitButton();
             });
 
