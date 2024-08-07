@@ -46,34 +46,56 @@
                 <form class="w-full max-w-2xl shadow-2xl bg-white rounded-lg shadow-md p-8" method="post">
                     @csrf
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="first_name">
+                        <label class="block text-gray-700 font-bold mb-2" for="name">
                             First Name<span class="text-red-600">*</span>
                         </label>
-                        <input id="first_name" type="text" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="first_name" value="{{ old('first_name') }}" required autocomplete="off" autofocus placeholder="Enter Your First name">
+                        <input id="name" type="text"
+                               class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('name') is-invalid @enderror"
+                               name="first_name" value="{{ old('first_name') }}" required autocomplete="off" autofocus
+                        placeholder="Enter Your First name">
+
+                        @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+
                     </div>
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="last_name">
+                        <label class="block text-gray-700 font-bold mb-2" for="lastName">
                             Last Name<span class="text-red-600">*</span>
                         </label>
-                        <input id="last_name" type="text" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="last_name" value="{{ old('last_name') }}" required placeholder="Enter your last name">
+                        <input
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="lastName" name="last_name" value="{{ old('last_name') }}" type="text" placeholder="Enter your last name">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="emailAddress">
                             Email Address<span class="text-red-600">*</span>
                         </label>
-                        <input id="emailAddress" type="email" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email_address" value="{{ old('email_address') }}" required placeholder="Enter your email address">
+                        <input
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="emailAddress" type="email" value="{{ old('email_address') }}" placeholder="Enter your email address" name="email_address">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="confirmEmailAddress">
                             Confirm Email Address<span class="text-red-600">*</span>
                         </label>
-                        <input id="confirmEmailAddress" type="email" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="confirm_email" value="{{ old('confirm_email') }}" required placeholder="Please retype your email address exactly">
+                        <input
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="confirmEmailAddress" type="email"
+                            name="confirm_email"
+                            value="{{ old('confirm_email') }}"
+                            placeholder="Please retype your email address exactly">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="licenseState">
                             License State<span class="text-red-600">*</span>
                         </label>
-                        <select name="state" class="block appearance-none w-full border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="licenseState" required>
+                        <select
+                            name="state"
+                            class="block appearance-none w-full border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="licenseState">
                             @foreach($states as $state)
                                 <option value="{!! $state->id !!}">{!! $state->name !!}</option>
                             @endforeach
@@ -83,47 +105,78 @@
                         <label class="block text-gray-700 font-bold mb-2" for="driverLicenseNumber">
                             Driver License #<span class="text-red-600">*</span>
                         </label>
-                        <input id="driverLicenseNumber" type="text" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="driver_license" value="{{ old('driver_license') }}" required placeholder="Enter your driver license number">
+                        <input
+                            name="driver_license"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="driverLicenseNumber" value="{{ old('driver_license') }}" type="text" placeholder="Enter your driver license number">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="birthDate">
                             Birth Date <span class="text-red-600">*</span>
                         </label>
-                        <input id="birthDate" type="date" name="birthDate" value="{{ old('birthDate') }}" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required placeholder="Select date">
+
+                        <input id="birthDate"
+                               type="date"
+                               name="birthDate"
+                               value="{{ old('birthDate') }}"
+                               class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                               placeholder="Select date">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm mb-2">
+                            Verify you are of legal age to take traffic school.
+                        </label>
+                        <!-- <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="checkbox"> -->
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="promoCode">
                             Promo Code (optional)
                         </label>
-                        <input id="promoCode" type="text" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="promo_code" value="{{ old('promo_code') }}" placeholder="You can also enter a promo code later, when making payment.">
+                        <input
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="promoCode" type="text"
+                            name="promo_code"
+                            value="{{ old('promo_code') }}"
+                            placeholder="You can also enter a promo code later, when making payment.">
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2">
-                            <input class="mr-2 leading-tight" type="checkbox" name="agreement" value="1" required>
-                            I have read and understand the TrafficSchoolCourse.com user agreement and certificate of completion policy.
+                            <input class="mr-2 leading-tight" type="checkbox" name="agreement" value="1">
+                            I have read and understand the TrafficSchoolCourse.com user agreement and certificate of
+                            completion policy.
                         </label>
-                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                           href="#">
                             View TrafficSchoolCourse.com user agreement.
                         </a>
                         <br/>
-                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                           href="#">
                             View certificate of completion policy.
                         </a>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2">
                             <input class="mr-2 leading-tight" type="checkbox" name="special_offer" value="1">
-                            I am interested in getting useful information and special offers for other TrafficSchoolCourse.com products.
+                            I am interested in getting useful information and special offers for other TrafficSchoolCourse.com
+                            products.
                         </label>
                     </div>
                     <div class="flex items-center justify-center">
-                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="submit">
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                            type="submit">
                             Continue
                         </button>
                     </div>
                     <div class="text-group py-4">
                         <p><span class="text-red-600">*</span> Indicates Required Field</p>
-                        <h4><strong class="text-blue-600 font-bold text-2xl">Note About Your Ticket Information:</strong> You can sign up for our course now, even if you don't have your traffic ticket in-hand. Providing your ticket information will be optional at this time, but keep in mind that you will need to provide your ticket info before taking the course final exam.</h4>
+                        <h4><strong class="text-blue-600 font-bold text-2xl">Note About Your Ticket
+                                Information:</strong> You can sign up for our course now, even if you don't have your
+                            traffic ticket in-hand. Providing your ticket information will be optional at this time, but
+                            keep in mind that you will need to provide your ticket info before taking the course final
+                            exam.</h4>
                     </div>
                 </form>
             </div>
@@ -203,101 +256,4 @@
             </div>
         </div>
     </div>--}}
-@endsection
-
-@section('scripts')
-    <script>
-        $(document).ready(function() {
-            // Custom method to check if the date is greater than 16 years old
-            $.validator.addMethod("ageCheck", function(value, element) {
-                const birthDate = new Date(value);
-                const today = new Date();
-                const age = today.getFullYear() - birthDate.getFullYear();
-                const monthDiff = today.getMonth() - birthDate.getMonth();
-                const dayDiff = today.getDate() - birthDate.getDate();
-
-                // Adjust age if the birth date hasn't occurred yet this year
-                if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
-                    age--;
-                }
-
-                return this.optional(element) || age >= 16;
-            }, "You must be at least 16 years old.");
-
-            // Custom method to check if the Driver License has 1 capital letter and 7 digits
-            $.validator.addMethod("driverLicenseCheck", function(value, element) {
-                const regex = /^[A-Z]\d{7}$/;
-                return this.optional(element) || regex.test(value);
-            }, "Driver License should start with a capital letter and have 7 digits.");
-
-            $("form").validate({
-                rules: {
-                    first_name: "required",
-                    last_name: "required",
-                    email_address: {
-                        required: true,
-                        email: true
-                    },
-                    confirm_email: {
-                        required: true,
-                        email: true,
-                        equalTo: "#emailAddress"
-                    },
-                    state: "required",
-                    driver_license: {
-                        required: true,
-                        driverLicenseCheck: true
-                    },
-                    birthDate: {
-                        required: true,
-                        date: true,
-                        ageCheck: true
-                    },
-                    agreement: "required"
-                },
-                messages: {
-                    first_name: {
-                        required: "This field is required."
-                    },
-                    last_name: {
-                        required: "This field is required."
-                    },
-                    email_address: {
-                        required: "This field is required.",
-                        email: "Please enter a valid format."
-                    },
-                    confirm_email: {
-                        required: "This field is required.",
-                        email: "Please enter a valid format.",
-                        equalTo: "Email addresses do not match"
-                    },
-                    state: {
-                        required: "This field is required."
-                    },
-                    driver_license: {
-                        required: "This field is required.",
-                        driverLicenseCheck: "Driver License should start with a capital letter and have 7 digits."
-                    },
-                    birthDate: {
-                        required: "This field is required.",
-                        date: "Please enter a valid format.",
-                        ageCheck: "You must be at least 16 years old."
-                    },
-                    agreement: {
-                        required: "This field is required."
-                    }
-                },
-                errorPlacement: function(error, element) {
-                    error.addClass("text-red-600 text-sm");
-                    error.insertAfter(element);
-                },
-                highlight: function(element, errorClass, validClass) {
-                    $(element).addClass("border-red-600");
-                },
-                unhighlight: function(element, errorClass, validClass) {
-                    $(element).removeClass("border-red-600");
-                }
-            });
-        });
-    </script>
 @endsection
