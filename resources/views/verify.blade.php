@@ -11,6 +11,7 @@
                 <p class="py-8 px-8 xl:px-36">As an added security measure, questions will be asked at various points throughout the course to help verify that you are taking the course yourself. All traffic school providers are required by the CA DMV to ask verification questions.</p>
                 <p class="px-8 xl:px-36">Please answer the following identity verification question in order to continue.</p>
                 <form class="w-full mx-auto mt-6 max-w-2xl bg-white rounded-lg shadow-md p-8" method="post">
+                    @csrf
 
                     <div class="mb-4 py-4">
                         <h3 class="text-3xl font-bold text-blue-600 py-6">Question: What day of the month were you born?</h3>
@@ -76,6 +77,13 @@
                 url: "{!! route('verify', ['id' => request()->id]) !!}",
                 data: {'day':birthDay},
                 dataType: "json",
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader("Accept", "application/json");
+                    xhr.setRequestHeader(
+                        "X-CSRF-TOKEN",
+                        $('meta[name="csrf-token"]').attr("content")
+                    );
+                },
                 success: function (response) {
                     if(response.success){
                         return window.location.href = response.message;

@@ -63,7 +63,7 @@
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2">
                             <input id="agreementCheckbox" class="mr-2 leading-tight" type="checkbox" name="agreement" value="1">
-                            I have read and understand the TrafficSchoolCourse.com user agreement and certificate of completion policy.
+                            I have read and understand the TrafficSchoolCourse.com user agreement and certificate of completion policy.<span class="text-red-600">*</span>
                         </label>
                         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">View TrafficSchoolCourse.com user agreement.</a><br/>
                         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">View certificate of completion policy.</a>
@@ -83,15 +83,18 @@
         </div>
     </main>
 @endsection
-
 @section('scripts')
     <script>
         $(document).ready(function() {
+            // Log today's date to the console
+            const today = new Date();
+            console.log('Today\'s Date:', today.toISOString().split('T')[0]);
+
             // Custom method to check if the date is greater than 16 years old
             $.validator.addMethod("ageCheck", function(value, element) {
                 const birthDate = new Date(value);
                 const today = new Date();
-                const age = today.getFullYear() - birthDate.getFullYear();
+                let age = today.getFullYear() - birthDate.getFullYear();
                 const monthDifference = today.getMonth() - birthDate.getMonth();
                 if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
                     age--;
@@ -166,9 +169,28 @@
                 }
             });
 
+            // Disable future dates
+            const todayDate = new Date().toISOString().split('T')[0];
+            $('#birthDate').attr('max', todayDate);
+
             function toggleSubmitButton() {
                 const isAgreementChecked = $('#agreementCheckbox').is(':checked');
-                $('#submitButton').prop('disabled', !isAgreementChecked);
+                const $submitButton = $('#submitButton');
+                if (isAgreementChecked) {
+                    $submitButton.prop('disabled', false);
+                    $submitButton.css({
+                        'background-color': '#1d4ed8', // Blue background
+                        'cursor': 'pointer',
+                        'opacity': '1'
+                    });
+                } else {
+                    $submitButton.prop('disabled', true);
+                    $submitButton.css({
+                        'background-color': '#9ca3af', // Gray background
+                        'cursor': 'not-allowed',
+                        'opacity': '0.6'
+                    });
+                }
             }
 
             $('#agreementCheckbox').on('change', function() {
@@ -178,6 +200,7 @@
             // Initial check to ensure the button state is correct on page load
             toggleSubmitButton();
         });
-
     </script>
 @endsection
+
+
