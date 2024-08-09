@@ -150,15 +150,56 @@ class HomeController extends Controller
         }
 
         if ($request->ajax()) {
-            $day = Carbon::parse($request->user()->details->dob)->format('d');
-            if ($day == $request->day) {
+            $userDetail = $request->user()->details;
 
-                $request->session()->put('section_birth', 'verified');
-                return response()->json([
-                    'success' => true,
-                    'message' => $request->session()->get('previousUrl')
-                ]);
+            // Retrieve the user’s birthdate details
+            $birthMonth = Carbon::parse($userDetail->dob)->format('m'); // Month with leading zero
+            $birthYear = Carbon::parse($userDetail->dob)->format('Y');
+            $birthDay = Carbon::parse($userDetail->dob)->format('d'); // Day with leading zero
+
+            $questionKey = $request->input('question_key'); // The key for the question type
+
+            switch ($questionKey) {
+                case 'month':
+                    $selectedMonth = $request->input('month');
+                    if ($selectedMonth == $birthMonth) {
+                        $request->session()->put('section_birth', 'verified');
+                        return response()->json([
+                            'success' => true,
+                            'message' => $request->session()->get('previousUrl')
+                        ]);
+                    }
+                    break;
+
+                case 'year':
+                    $selectedYear = $request->input('year');
+                    if ($selectedYear == $birthYear) {
+                        $request->session()->put('section_birth', 'verified');
+                        return response()->json([
+                            'success' => true,
+                            'message' => $request->session()->get('previousUrl')
+                        ]);
+                    }
+                    break;
+
+                case 'day':
+                    $selectedDay = $request->input('day');
+                    if ($selectedDay == $birthDay) {
+                        $request->session()->put('section_birth', 'verified');
+                        return response()->json([
+                            'success' => true,
+                            'message' => $request->session()->get('previousUrl')
+                        ]);
+                    }
+                    break;
+
+                default:
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'Invalid verification key.'
+                    ]);
             }
+
             return response()->json([
                 'success' => false,
                 'message' => 'Please select your correct answer to this question.'
@@ -167,4 +208,5 @@ class HomeController extends Controller
 
         return view('verify');
     }
+
 }
