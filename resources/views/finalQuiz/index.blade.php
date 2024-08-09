@@ -63,7 +63,7 @@
             </p>
 
 
-            <form class="mx-auto px-8" method="post" action="{{route('final.quiz.post', request()->id)}}" id="quiz_form">
+            <form class="mx-auto px-8 no-copy-paste" method="post" action="{{route('final.quiz.post', request()->id)}}" id="quiz_form">
                 @csrf
                 @php $count = 1; $count_multi = 1; @endphp
                 @forelse($data->quiz as $ind => $quiz)
@@ -207,6 +207,7 @@
 @endsection
 
 @section('scripts')
+    <script src="{{ asset('assets/js/disable-copy-paste.js') }}"></script>
     <script>
         $('document').ready(function (e) {
             $('body').on('click', '.submitButton', function (e) {

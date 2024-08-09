@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <main class="px-4">
+    <main class="px-4 no-copy-paste">
         <section class="top py-8">
             <div class="flex item-center justify-center space-x-4 flex-wrap md:flex-nowrap px-8 xl:px-96">
                 <a href="#"
@@ -177,4 +177,9 @@
             </div>
         </section>
     </main>
+@endsection
+
+
+@section('scripts')
+    <script type="text/javascript" src="{{ asset('assets/js/disable-copy-paste.js') }}">
 @endsection
